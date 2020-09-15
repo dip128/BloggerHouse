@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 
 const blogRoutes = require('./routes/blogRoutes');
 const app=express();
-const dbURI = 'mongodb+srv://dip128:1234@cluster0.iljra.mongodb.net/Nodetuts?retryWrites=true&w=majority'
+//const dbURI = 'your MongoDB atlast code'
 mongoose.connect(dbURI,{ useNewUrlParser: true,useUnifiedTopology:true})
 .then((result)=>{
     app.listen(3000);
